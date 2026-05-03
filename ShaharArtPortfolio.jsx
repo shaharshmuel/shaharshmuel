@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Sparkles, MonitorPlay, PenTool, Globe2, Layers3, MessageCircle, CheckCircle2 } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 const works = [
   {
@@ -207,7 +208,7 @@ export default function ShaharArtPortfolio() {
             <div className="space-y-5">
               <div className="flex items-center gap-3">
                 <Layers3 className="text-emerald-300" />
-                <p className="font-bold">מיתוג מלא לעסקים</p>
+                <p className="font-bold">מ��תוג מלא לעסקים</p>
               </div>
               <div className="flex items-center gap-3">
                 <Globe2 className="text-emerald-300" />
@@ -225,6 +226,7 @@ export default function ShaharArtPortfolio() {
           </div>
         </div>
       </section>
+      <Analytics />
     </main>
   );
 }
